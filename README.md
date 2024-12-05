@@ -1,43 +1,53 @@
-# Password Manager 🗝️
+# Password Manager 🗝️  
 
-A simple and secure **Password Manager** built using Python and Tkinter. It allows users to generate random passwords, save them for various websites, and securely store these details in a text file.
+A simple and secure Password Manager built using Python and Tkinter. It allows users to generate random passwords, save them for various websites, and securely manage these details using a JSON file.  
 
-## Features ✨
+## Features ✨  
 
-- **Generate Random Passwords**: Create strong and secure passwords with a mix of letters, numbers, and symbols.
-- **Save Passwords**: Store passwords associated with websites along with the username/email in a text file.
-- **Clipboard Copy**: Automatically copies the generated password to the clipboard for easy pasting.
-- **User Interface**: Simple and clean interface for managing passwords with Tkinter.
+- **Generate Random Passwords**: Create strong and secure passwords with a mix of letters, numbers, and symbols.  
+- **Save Passwords**: Store passwords associated with websites along with the username/email in a JSON file.  
+- **Search Saved Passwords**: Quickly find saved passwords by entering a website name.  
+- **Clipboard Copy**: Automatically copies the generated password to the clipboard for easy pasting.  
+- **User Interface**: Simple and clean interface for managing passwords with Tkinter.  
 
-## How It Works 🔑
+## How It Works 🔑  
 
-1. **Password Generator**:
-   - Generates a random password consisting of letters (uppercase and lowercase), numbers, and symbols.
-   - The length of the password is between 8 to 10 characters.
-   
-2. **Save Password**:
-   - You can save the generated password along with the website and username/email into a local file (`data.txt`).
-   - If any fields are left empty, a warning message will prompt the user.
+### Password Generator  
+- Generates a random password consisting of letters (uppercase and lowercase), numbers, and symbols.  
+- The length of the password is between 8 to 10 characters.  
+- Automatically copies the generated password to the clipboard for convenience.  
 
-3. **Clipboard Support**:
-   - The generated password is copied to the clipboard for easy use.
+### Save Password  
+- Save the generated password along with the website and username/email into a JSON file (`data.json`).  
+- If the file doesn't exist, it is created automatically.  
+- Existing data is updated with new entries while keeping all previously saved passwords intact.  
+- A warning appears if required fields are left empty.  
 
-## UI Overview 📱
+### Search Password  
+- Search for saved login details by entering the website name.  
+- Displays the email/username and password for the website if found.  
+- Notifies the user if no details exist for the entered website or if the data file is missing.  
 
-- **Website**: Enter the website or service for which you're saving the password.
-- **Email/Username**: Input the email or username linked to the website.
-- **Password**: Generated or manually entered password.
-- **Generate Password**: Click to generate a random password.
-- **Add**: Save the website, username, and password to a text file.
+## UI Overview 📱  
 
-## Files
+- **Website**: Enter the website or service for which you're saving the password.  
+- **Email/Username**: Input the email or username linked to the website.  
+- **Password**: Generated or manually entered password.  
+- **Generate Password**: Click to generate a random password.  
+- **Add**: Save the website, username, and password to the JSON file.  
+- **Search**: Retrieve saved password data by entering a website name.  
 
-- **logo.png**: A simple image to represent the password manager.
-- **data.txt**: The text file where saved passwords are stored (in the format: `website | username | password`).
+## Files  
+
+- **logo.png**: A simple image to represent the password manager.  
+- **data.json**: The file where saved passwords are stored in JSON format. Each entry includes:  
+  - **Website**: The name of the website or service.  
+  - **Email**: The associated email or username.  
+  - **Password**: The stored password.  
 
 ## Screenshots 📸
 
-![grafik](https://github.com/user-attachments/assets/3fc37d05-3221-4933-8e9e-79f5e0b08f2f)
+![grafik](https://github.com/user-attachments/assets/4504699b-78c4-4433-a29a-79c575f76d8e)
 
 ## License 📜
 
